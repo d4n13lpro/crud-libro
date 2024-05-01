@@ -50,7 +50,7 @@ crud-libro
     * DATABASE='nombre_base_datos'
     * PORT='puerto_servidor'
   
-7.Tabla
+7. Tabla
 
 Archivo/Carpeta	Función	Interacción
 .env	Almacena las variables de entorno del proyecto, como la cadena de conexión de la base de datos.	Es leído por server.js para configurar el entorno.
