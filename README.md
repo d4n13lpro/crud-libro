@@ -42,3 +42,11 @@ crud-libro
 3. Ejecuta `npm install` en la raíz del proyecto para instalar todas las dependencias listadas en el archivo `package.json`.
 4. Configura las variables de entorno en el archivo `.env` según sea necesario.
 5. Inicia el servidor ejecutando `node server.js`.
+6. Crear un archivo .env con las variables de entorno de la base de datos
+    * HOST='host'
+    * DB_PORT='puerto_base_datos'
+    * USER='usuario'
+    * PASSWORD='contrasena'
+    * DATABASE='nombre_base_datos'
+    * PORT='puerto_servidor'
+
