@@ -49,4 +49,24 @@ crud-libro
     * PASSWORD='contrasena'
     * DATABASE='nombre_base_datos'
     * PORT='puerto_servidor'
+  
+7.Tabla
+
+Archivo/Carpeta	Función	Interacción
+.env	Almacena las variables de entorno del proyecto, como la cadena de conexión de la base de datos.	Es leído por server.js para configurar el entorno.
+.gitignore	Especifica qué archivos y directorios deben ser ignorados por Git.	Interactúa con Git para evitar que ciertos archivos sean rastreados.
+package.json	Contiene metadatos del proyecto y las dependencias.	Es leído por npm para instalar las dependencias del proyecto.
+package-lock.json	Registra la versión exacta de las dependencias instaladas.	Es leído por npm para garantizar la consistencia de las dependencias.
+server.js	Punto de entrada de la aplicación. Inicia el servidor y configura la aplicación.	Importa y utiliza books.routes.js y error.middleware.js.
+📁routes/books.routes.js	Define las rutas de la API y cómo deben manejar las solicitudes.	Importa y utiliza books.controller.js. Es importado por server.js.
+📁middlewares/error.middleware.js	Maneja los errores que ocurren durante el procesamiento de las solicitudes HTTP.	Es importado por server.js.
+📁controllers/books.controller.js	Maneja las solicitudes HTTP y utiliza los servicios para interactuar con la base de datos.	Importa y utiliza books.service.js. Es importado por books.routes.js.
+📁services/books.service.js	Este archivo encapsula la lógica de negocio y las operaciones de la base de datos.	Importa y utiliza book.model.js. Es importado por books.controller.js.
+📁models/book.model.js	Define la estructura de los datos que estás almacenando en la base de datos.	Es importado por books.service.js.
+README.md	Documenta cómo funciona tu aplicación y cómo otros pueden usarla.	No interactúa directamente con otros archivos, pero proporciona información útil para los usuarios.
+request.http	Contiene ejemplos de solicitudes HTTP que se pueden hacer a tu API.	No interactúa directamente con otros archivos, pero puede ser utilizado para probar la API.
+
+![image](https://github.com/d4n13lpro/crud-libro/assets/115835689/8d591c9e-ec39-49dc-b732-6c67bb46ab10)
+
+
 
